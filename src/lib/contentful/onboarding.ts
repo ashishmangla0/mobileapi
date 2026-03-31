@@ -11,7 +11,7 @@ export const getOnboarding = async (params = {}) => {
   const flattenedSlides = res.data.flatMap(
     (item: any) =>
       item.slides?.map((slide: any) => ({
-        id: slide.id || item.id, // optional
+        id: slide.id ,
         title: slide.title,
         description: slide.description,
         primaryActionText: slide.primaryActionText,
